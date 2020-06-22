@@ -25,10 +25,14 @@ export default StyleSheet.create({
     zIndex: 9999,
     display: 'flex',
     alignItems: 'center',
-    paddingTop: 70,
+    paddingTop: '15%',
+  },
+  userWrapper: {
+    alignItems: 'center',
+    position: 'relative',
   },
   photo: {
-    marginTop: 100,
+    top: 80,
   },
   name: {
     color: '#ffffff',
@@ -37,7 +41,7 @@ export default StyleSheet.create({
     fontWeight: '700',
     letterSpacing: 0.5,
     lineHeight: 20,
-    marginTop: 26,
+    top: 106,
   },
   productsNumberWrapper: {
     paddingVertical: 5,
@@ -45,7 +49,7 @@ export default StyleSheet.create({
     paddingRight: 17,
     borderRadius: 15,
     backgroundColor: '#ffffff',
-    marginTop: 26,
+    top: 130,
   },
   productsNumber: {
     color: '#000000',
@@ -55,22 +59,28 @@ export default StyleSheet.create({
     letterSpacing: 0.39,
     lineHeight: 20,
   },
+  cardWrapper: {
+    width: '25%',
+    display: 'flex',
+    alignItems: 'center',
+  },
   card: {
-    zIndex: 9999,
+    marginTop: 55,
     backgroundColor: '#ffffff',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
     width: 250,
-    height: 360,
+    height: '75%',
     borderRadius: 20,
-    paddingTop: 65,
-    paddingBottom: 45,
+    paddingTop: 70,
+    paddingBottom: 40,
+    elevation: 20,
     shadowColor: '#303371',
     shadowOpacity: 0.3,
     shadowRadius: 20,
     shadowOffset: {
-      height: 30,
+      height: 20,
       width: 1,
     },
   },
@@ -79,7 +89,22 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   cardImage: {
-    marginTop: -115,
+    position: 'absolute',
+    top: -115,
+  },
+  cardIconWrapper: {
+    position: 'relative',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 60,
+    marginBottom: 20,
+  },
+  cardIconBackground: {
+    position: 'absolute',
+  },
+  cardIcon: {
+    position: 'absolute',
   },
   cardTitle: {
     color: '#4e5b76',
@@ -89,7 +114,8 @@ export default StyleSheet.create({
     letterSpacing: 0.69,
     lineHeight: 30,
     textAlign: 'center',
-    paddingHorizontal: 40,
+    paddingHorizontal: 30,
+    marginTop: 50,
   },
   cardText: {
     color: '#a0a9b8',
@@ -99,7 +125,7 @@ export default StyleSheet.create({
     letterSpacing: 0.39,
     lineHeight: 20,
     textAlign: 'center',
-    marginTop: 20,
+    marginTop: '7%',
     paddingHorizontal: 40,
   },
   cardButton: {
@@ -107,7 +133,7 @@ export default StyleSheet.create({
     borderRadius: 19,
     paddingHorizontal: 35,
     paddingVertical: 9,
-    // alignSelf: 'flex-end',
+    marginBottom: -50,
   },
   cardButtonText: {
     color: '#ffffff',
@@ -121,12 +147,11 @@ export default StyleSheet.create({
     width: '100%',
     position: 'absolute',
     left: 0,
-    bottom: -120,
+    bottom: -100,
     display: 'flex',
     flexDirection: 'row',
     backgroundColor: '#ffffff',
-    paddingTop: 26,
-    paddingBottom: 46,
+    paddingVertical: 26,
   },
   menuElement: {
     width: '33.33%',
@@ -143,6 +168,9 @@ export default StyleSheet.create({
   },
   blackColor: {
     color: '#000000',
+  },
+  backgroundWrapper: {
+    height: '100%',
   },
   lightBlue2Bg: {
     position: 'absolute',
@@ -171,7 +199,7 @@ export default StyleSheet.create({
     position: 'absolute',
     width: '100%',
     height: '100%',
-    top: '35%',
+    top: '40%',
     left: 0,
   },
   rectangleBg: {
